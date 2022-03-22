@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">OutTheDoor</string>
+    <string name="button">Button</string>
+    <string name="sleeping_now">Sleeping Now</string>
+    <string name="sleeping_soon">Sleeping Soon</string>
+    <string name="sleep_settings">Sleep Settings</string>
 </resources>
