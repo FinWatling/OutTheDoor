@@ -7,16 +7,19 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/appTitle"
+        android:layout_width="344dp"
+        android:layout_height="80dp"
+        android:gravity="center"
         android:text="Out The Door"
-        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.02" />
+
 
     <TextView
         android:id="@+id/time"
@@ -31,45 +34,53 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        app:layout_constraintVertical_bias="0.118" />
 
     <Button
         android:id="@+id/sleepingNowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleX="2"
+        android:scaleY="2"
         android:text="@string/sleeping_now"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sleepingSoonButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time"
-        app:layout_constraintVertical_bias="0.367" />
-
+        app:layout_constraintTop_toBottomOf="@+id/time" />
 
     <Button
-        android:id="@+id/sleepingNowButton2"
+        android:id="@+id/sleepingSoonButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
         android:text="@string/sleeping_soon"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sleepSettingsButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleepingNowButton"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
-        android:id="@+id/sleepingNowButton3"
+        android:id="@+id/sleepSettingsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
         android:text="@string/sleep_settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sleepingNowButton2"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintTop_toBottomOf="@+id/sleepingSoonButton"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

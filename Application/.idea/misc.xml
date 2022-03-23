@@ -5,10 +5,12 @@
       <map>
         <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_main.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_second.xml" value="0.2672239108409321" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3221396625905797" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
