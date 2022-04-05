@@ -22,7 +22,20 @@ public class SecondActivity extends AppCompatActivity {
 
         Intent intent = this.getIntent();
         Bundle bundle = intent.getExtras();
-        ArrayList<Date> wakeUpTimesArray = (ArrayList<Date>) bundle.getSerializable("wakeUpTimesArray");
+
+        String activityCheck = intent.getExtras().getString("fromID");
+        ArrayList<Date> wakeUpTimesArray;
+
+        if(activityCheck.equals("MainActivity")) {
+
+
+            wakeUpTimesArray = (ArrayList<Date>) bundle.getSerializable("wakeUpTimesArray");
+
+        }else{
+
+            wakeUpTimesArray = (ArrayList<Date>) bundle.getSerializable("wakeUpTimesArrayFromSleepingSoonActivity");
+
+        }
 
 
         TextView time = findViewById(R.id.time);
@@ -32,7 +45,6 @@ public class SecondActivity extends AppCompatActivity {
 
         time.setText(currentDateTimeString); //sets current time in app
 
-        System.out.println(wakeUpTimesArray.get(1));
 
         Button leastSleep = findViewById(R.id.leastSleep);
         leastSleep.setText(DateFormat.getTimeInstance(DateFormat.SHORT).format(wakeUpTimesArray.get(0)).toString());

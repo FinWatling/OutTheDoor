@@ -17,8 +17,25 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    final int HOUR = 3600*1000; //hour in ms
+    public ArrayList<Date> calculateWakeTime(Date currentTime){
+
+        ArrayList<Date> riseTimes = new ArrayList<>(); //arraylist containing potential wake up times
+
+        Date riseTime1 = new Date(currentTime.getTime() + 6 * HOUR);
+        riseTimes.add(riseTime1);
+        Date riseTime2 = new Date((long) (currentTime.getTime() + 7.5 * HOUR)); //optimal wake up
+        riseTimes.add(riseTime2);
+        Date riseTime3 = new Date(currentTime.getTime() + 9 * HOUR);
+        riseTimes.add(riseTime3);
+
+
+        return riseTimes;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -33,23 +50,6 @@ public class MainActivity extends AppCompatActivity {
         sleepingNowButton.setOnClickListener( new View.OnClickListener(){
 
 
-            private static final int HOUR = 3600*1000; //hour in ms
-
-            public ArrayList<Date> calculateWakeTime(Date currentTime){
-
-                ArrayList<Date> riseTimes = new ArrayList<>(); //arraylist containing potential wake up times
-
-                Date riseTime1 = new Date(currentTime.getTime() + 6 * HOUR);
-                riseTimes.add(riseTime1);
-                Date riseTime2 = new Date((long) (currentTime.getTime() + 7.5 * HOUR)); //optimal wake up
-                riseTimes.add(riseTime2);
-                Date riseTime3 = new Date(currentTime.getTime() + 9 * HOUR);
-                riseTimes.add(riseTime3);
-
-
-                return riseTimes;
-            }
-
 
             @Override
             public void onClick(View v){
@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     ArrayList<Date> wakeUpTimesArray = calculateWakeTime(currentTime);
                     bundle.putSerializable("wakeUpTimesArray", wakeUpTimesArray);
+                    intent.putExtra("fromID", "MainActivity");
                     intent.putExtras(bundle);
                     startActivity(intent);
-
 
 
             }
