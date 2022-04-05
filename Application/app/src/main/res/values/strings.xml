@@ -5,4 +5,5 @@
     <string name="sleeping_soon">Sleeping Soon</string>
     <string name="sleep_settings">Sleep Settings</string>
     <string name="least_sleep">Least Sleep</string>
+    <string name="submit_sleep_time">Submit Sleep Time</string>
 </resources>

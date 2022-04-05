@@ -32,6 +32,8 @@ public class SecondActivity extends AppCompatActivity {
 
         time.setText(currentDateTimeString); //sets current time in app
 
+        System.out.println(wakeUpTimesArray.get(1));
+
         Button leastSleep = findViewById(R.id.leastSleep);
         leastSleep.setText(DateFormat.getTimeInstance(DateFormat.SHORT).format(wakeUpTimesArray.get(0)).toString());
 

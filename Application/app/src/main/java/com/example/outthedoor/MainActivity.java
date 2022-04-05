@@ -68,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        Button sleepingSoonButton = findViewById(R.id.sleepingSoonButton);
+        sleepingSoonButton.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, SleepingSoonActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
 
 
 
