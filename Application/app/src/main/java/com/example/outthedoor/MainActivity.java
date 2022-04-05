@@ -62,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
 
 
-//                Intent setAlarm = new Intent();
-//                setAlarm.putExtra(AlarmClock.EXTRA_HOUR, 8);
-//                SetAlarm.putExtra(AlarmClock.);
-//                setAlarm.putExtra(AlarmClock.EXTRA_MINUTES,  30);
-//                startActivity(setAlarm);
 
             }
 
