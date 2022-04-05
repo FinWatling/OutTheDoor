@@ -64,13 +64,13 @@
         android:scaleY="2"
         android:text="@string/sleeping_soon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/sleepSettingsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleepingNowButton"
         app:layout_constraintVertical_bias="0.2" />
 
+    <!---
     <Button
         android:id="@+id/sleepSettingsButton"
         android:layout_width="wrap_content"
@@ -85,5 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleepingSoonButton"
         app:layout_constraintVertical_bias="0.5" />
+
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
