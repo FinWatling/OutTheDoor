@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_main.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
+        <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_second.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/layout/activity_sleeping_soon.xml" value="0.26545086119554206" />
+        <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2595" />
+        <entry key="..\:/Users/finla/Desktop/Computer Science Y2/S2/Mobile application development s2/project/Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2595" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3221396625905797" />
       </map>

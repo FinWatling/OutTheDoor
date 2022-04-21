@@ -26,24 +26,29 @@ public class SecondActivity extends AppCompatActivity {
         String activityCheck = intent.getExtras().getString("fromID");
         ArrayList<Date> wakeUpTimesArray;
 
+        TextView time = findViewById(R.id.time);
+
+
         if(activityCheck.equals("MainActivity")) {
 
-
             wakeUpTimesArray = (ArrayList<Date>) bundle.getSerializable("wakeUpTimesArray");
+            Date currentTime = new Date();
+            String currentDateTimeString = DateFormat.getTimeInstance(DateFormat.SHORT).format(currentTime); //current time for clock display
+            time.setText(currentDateTimeString);
 
         }else{
 
             wakeUpTimesArray = (ArrayList<Date>) bundle.getSerializable("wakeUpTimesArrayFromSleepingSoonActivity");
+            Date timeOfSleep = (Date) bundle.get("TimeOfSleep");
+            String timeOfSleepString = DateFormat.getTimeInstance(DateFormat.SHORT).format(timeOfSleep);
+            time.setText(timeOfSleepString);
 
         }
 
 
-        TextView time = findViewById(R.id.time);
 
-        Date currentTime = new Date();
-        String currentDateTimeString = DateFormat.getTimeInstance(DateFormat.SHORT).format(currentTime); //current time for clock display
 
-        time.setText(currentDateTimeString); //sets current time in app
+         //sets current time in app
 
 
         Button leastSleep = findViewById(R.id.leastSleep);

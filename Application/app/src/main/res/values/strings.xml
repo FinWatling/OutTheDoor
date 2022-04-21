@@ -6,4 +6,10 @@
     <string name="sleep_settings">Sleep Settings</string>
     <string name="least_sleep">Least Sleep</string>
     <string name="submit_sleep_time">Submit Sleep Time</string>
+    <string name="out_the_door">Out The Door</string>
+    <string name="created_by_fin_watling">Created by Fin Watling</string>
+    <string name="best_sleep">best sleep</string>
+    <string name="too_much_sleep">too much sleep</string>
+    <string name="based_on_a_sleep_time_of">Based on a sleep time of:</string>
+    <string name="suggested_wake_up_times">Suggested Wake Up Times</string>
 </resources>
