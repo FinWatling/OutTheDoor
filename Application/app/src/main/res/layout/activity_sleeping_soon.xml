@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D9FA8DA"
     tools:context=".SleepingSoonActivity">
 
     <TimePicker
@@ -23,7 +24,7 @@
         android:id="@+id/submitSleepTime"
         android:layout_width="190dp"
         android:layout_height="78dp"
-        android:backgroundTint="#518E37"
+        android:backgroundTint="#BC327E35"
         android:fontFamily="@font/dm_sans"
         android:gravity="center"
         android:includeFontPadding="false"
@@ -46,8 +47,8 @@
         android:gravity="center"
         android:text="Sleep Time Selector"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="48sp"
-        android:textStyle="normal|bold"
+        android:textSize="34sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/timePicker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

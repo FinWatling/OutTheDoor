@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D9FA8DA"
     tools:context=".SecondActivity">
 
     <TextView
@@ -48,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#FFB300"
+        android:backgroundTint="#FFAB40"
         android:fontFamily="@font/dm_sans"
         android:gravity="center"
         android:scaleX="2"
@@ -63,7 +64,7 @@
         android:id="@+id/bestSleep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#43A047"
+        android:backgroundTint="#BC327E35"
         android:fontFamily="@font/dm_sans"
         android:gravity="center"
         android:scaleX="2"
@@ -81,7 +82,7 @@
         android:id="@+id/tooMuchSleep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FFB300"
+        android:backgroundTint="#FFAB40"
         android:fontFamily="@font/dm_sans"
         android:gravity="center"
         android:scaleX="2"
