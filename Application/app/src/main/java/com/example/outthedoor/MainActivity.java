@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                     Bundle bundle = new Bundle();
                     ArrayList<Date> wakeUpTimesArray = calculateWakeTime(currentTime);
-                    bundle.putSerializable("wakeUpTimesArray", wakeUpTimesArray);
+                    bundle.putSerializable("wakeUpTimesArrayFromMainActivity", wakeUpTimesArray);
                     intent.putExtra("fromID", "MainActivity");
                     intent.putExtras(bundle);
                     startActivity(intent);
